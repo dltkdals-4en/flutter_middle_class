@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class MyAniContainer extends StatefulWidget {
-  const MyAniContainer({Key? key}) : super(key: key);
+  const MyAniContainer({Key key}) : super(key: key);
 
   @override
   _MyAniContainerState createState() => _MyAniContainerState();

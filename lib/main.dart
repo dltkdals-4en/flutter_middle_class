@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_middle_class/pratice/MyDrawer.dart';
+import 'package:flutter_middle_class/pratice/MyFormValidation.dart';
+import 'package:flutter_middle_class/pratice/MyOrientation.dart';
+import 'package:flutter_middle_class/pratice/MySnackBar.dart';
+import 'package:flutter_middle_class/pratice/MyTapController.dart';
 import 'package:flutter_middle_class/pratice/animated_opacity.dart';
-
 import 'pratice/animated_container.dart';
 
 void main() {
@@ -25,9 +29,99 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      // home: MyAniContainer(),
-      home: MyAnimatedOpacity(),
+      home: MyPage(),
     );
   }
 }
 
+class MyPage extends StatefulWidget {
+  const MyPage({Key key}) : super(key: key);
+
+  @override
+  _MyPageState createState() => _MyPageState();
+}
+
+class _MyPageState extends State<MyPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Flutter Middle Class'),
+      ),
+      body: ListView(
+        children: <Widget>[
+          ListTile(
+            title: Text('AnimatedContainer'),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MyAniContainer(),
+                  ));
+            },
+          ),
+          ListTile(
+            title: Text('AnimatedOpacity'),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MyAnimatedOpacity(),
+                  ));
+            },
+          ),
+          ListTile(
+            title: Text('MyDrawer'),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MyDrawer(),
+                  ));
+            },
+          ),
+          ListTile(
+            title: Text('MyOrientaion'),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MyOrientation(),
+                  ));
+            },
+          ),
+          ListTile(
+            title: Text('MySnackBar'),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MySnackBar(),
+                  ));
+            },
+          ),
+          ListTile(
+            title: Text('MyTabController'),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MyTapController(),
+                  ));
+            },
+          ),
+          ListTile(
+            title: Text('FormValidation'),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MyFormValidation(),
+                  ));
+            },
+          ),
+        ],
+      ),
+    );
+  }
+}

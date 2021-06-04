@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 class MyAnimatedOpacity extends StatefulWidget {
-  const MyAnimatedOpacity({Key? key}) : super(key: key);
+  const MyAnimatedOpacity({Key key}) : super(key: key);
 
   @override
   _MyAnimatedOpacityState createState() => _MyAnimatedOpacityState();
