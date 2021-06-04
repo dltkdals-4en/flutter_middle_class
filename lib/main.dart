@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_middle_class/pratice/my_drawer.dart';
 import 'package:flutter_middle_class/pratice/my_form_validation.dart';
+import 'package:flutter_middle_class/pratice/my_method_channel.dart';
 import 'package:flutter_middle_class/pratice/my_orientation.dart';
 import 'package:flutter_middle_class/pratice/my_snack_bar.dart';
+import 'package:flutter_middle_class/pratice/my_swipe_to_dismiss.dart';
 import 'package:flutter_middle_class/pratice/my_tap_controller.dart';
 import 'package:flutter_middle_class/pratice/animated_opacity.dart';
 import 'pratice/animated_container.dart';
@@ -117,6 +119,26 @@ class _MyPageState extends State<MyPage> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => MyFormValidation(),
+                  ));
+            },
+          ),
+          ListTile(
+            title: Text('SwipeToDismiss'),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MySwipeToDismiss(),
+                  ));
+            },
+          ),
+          ListTile(
+            title: Text('MethodChannel'),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MyMethodChannel(),
                   ));
             },
           ),
