@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_middle_class/pratice/MyDrawer.dart';
-import 'package:flutter_middle_class/pratice/MyFormValidation.dart';
-import 'package:flutter_middle_class/pratice/MyOrientation.dart';
-import 'package:flutter_middle_class/pratice/MySnackBar.dart';
-import 'package:flutter_middle_class/pratice/MyTapController.dart';
+import 'package:flutter_middle_class/pratice/my_drawer.dart';
+import 'package:flutter_middle_class/pratice/my_form_validation.dart';
+import 'package:flutter_middle_class/pratice/my_orientation.dart';
+import 'package:flutter_middle_class/pratice/my_snack_bar.dart';
+import 'package:flutter_middle_class/pratice/my_tap_controller.dart';
 import 'package:flutter_middle_class/pratice/animated_opacity.dart';
 import 'pratice/animated_container.dart';
 
